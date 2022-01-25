@@ -127,7 +127,7 @@
         _gameScore = 0;
         _gameOver = false;
         _gameStart = false;
-        _gameTimeNum = 20;
+        _gameTimeNum = 30;
         GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
         countBlockSize();
         refreshGameLayer(GameLayer[0]);
@@ -348,11 +348,11 @@
             return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
         }
         SubmitResults();
-        if (score <= 49) return '试着好好练一下？';
-        if (score <= 99) return 'TCL';
-        if (score <= 149) return 'TQL';
-        if (score <= 199) return '您';
-        return '人？';
+        if (score <= 49) return '螃蟹无情的嘲讽了你';
+        if (score <= 99) return '这种程度对屑螃蟹来讲连前戏都不算';
+        if (score <= 149) return '螃蟹意犹未尽';
+        if (score <= 199) return '螃蟹要被玩坏了';
+        return '螃蟹变成了你的形状';
     }
 
     w.toStr = function(obj) {
